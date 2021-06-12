@@ -1,20 +1,20 @@
-apiVersion:apps/v1
-kind:Deployment
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-        name:jj-deployment
+        name: jj-deployment
         labels:
-                apps:jj
+                app: jj
 spec:           
-        replicas:3
+        replicas: 3
         selector:
                 matchlables:
-                        app:jj
+                        app: jj
         template:       
                 metadata:
-                        app:jj
+                        app: jj
                 spec:   
                         containers:
-                                name:mytom
-                                image:aisshwarya16/mytom:1.0
+                                name: mytom
+                                image: aisshwarya16/mytom:1.0
                                 ports:
                                         - containerPort: 8080
