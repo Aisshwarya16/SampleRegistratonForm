@@ -15,7 +15,7 @@ spec:
                                 app: jj
                 spec:   
                         containers:
-                                name: mytom
-                                image: aisshwarya16/mytom:1.0
-                                ports:
+                                - name: mytom
+                                  image: aisshwarya16/mytom:1.0
+                                  ports:
                                         - containerPort: 8080
