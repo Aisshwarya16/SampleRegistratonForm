@@ -17,4 +17,4 @@ spec:
                                 name:mytom
                                 image:aisshwarya16/mytom:1.0
                                 ports:
-                                        - containerPort: 80
+                                        - containerPort: 8080
