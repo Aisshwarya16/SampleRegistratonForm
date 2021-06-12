@@ -1,0 +1,20 @@
+apiVersion:apps/v1
+kind:Deployment
+metadata:
+        name:jj-deployment
+        labels:
+                apps:jj
+spec:           
+        replicas:3
+        selector:
+                matchlables:
+                        app:jj
+        template:       
+                metadata:
+                        app:jj
+                spec:   
+                        containers:
+                                name:mytom
+                                image:aisshwarya16/mytom:1.0
+                                ports:
+                                        - containerPort: 80
