@@ -7,11 +7,12 @@ metadata:
 spec:           
         replicas: 3
         selector:
-                matchlables:
+                matchLables:
                         app: jj
         template:       
                 metadata:
-                        app: jj
+                        labels:
+                                app: jj
                 spec:   
                         containers:
                                 name: mytom
